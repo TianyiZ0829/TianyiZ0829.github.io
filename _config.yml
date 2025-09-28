@@ -23,7 +23,7 @@ repository               : "TianyiZ0829/TianyiZ0829.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.jpg"
+  avatar           : "profile.jpg"
   name             : "Tianyi Zhu"
   pronouns         : "she/her"  
   bio              : "Ph.D. student in Darden School of Business, University of Virginia"
