@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate Teaching Assistant"
 permalink: /teaching/math-ta-sessions
 venue: "University Mathematics Department"
-date: 2021-01-01
+date: 2022-09-01
 location: "City, Country"
 ---
 
