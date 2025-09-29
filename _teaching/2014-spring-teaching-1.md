@@ -8,6 +8,10 @@ date: 2022-09-01
 location: "Muncie, IN"
 ---
 
-As an undergraduate business tutor, I supported students in microeconomics, macroeconomics, and advanced finance courses.  
-I organized review sessions, clarified key theoretical concepts, and provided one-on-one guidance to help students strengthen their understanding of core models and problem-solving techniques.  
-My work focused on connecting abstract theory with practical applications, enabling students to improve their performance and build confidence in tackling quantitative and analytical coursework.
+- **Subjects:** Microeconomics, Macroeconomics, and Advanced Finance  
+- **Activities:**  
+  - Organized review sessions to reinforce key concepts  
+  - Clarified theoretical frameworks and models in class discussions  
+  - Provided one-on-one guidance to strengthen problem-solving skills  
+- **Teaching Focus:** Linking abstract theory with practical applications to improve student performance and build confidence in analytical coursework
+
