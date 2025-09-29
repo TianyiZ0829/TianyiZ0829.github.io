@@ -72,13 +72,6 @@ Skills
   * Data visualization: Matplotlib, Plotly, Seaborn  
   * Statistical analysis: STATA, R  
   * Git / GitHub
-
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
   
 Service and leadership
