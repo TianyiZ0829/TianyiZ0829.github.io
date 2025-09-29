@@ -1,20 +1,16 @@
 ---
-title: "Teaching experience 2"
+title: "Teaching Experience 2"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
+type: "Undergraduate Teaching Assistant"
+permalink: /teaching/math-ta-sessions
+venue: "University Mathematics Department"
+date: 2021-01-01
 location: "City, Country"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+As a teaching assistant in the Mathematics Department, I supported undergraduate students through TA sessions and review workshops, with a focus on **Calculus** and **Linear Algebra**.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+- **Session Organization:** Conducted structured review sessions to prepare students for exams and reinforce key concepts  
+- **Subject Focus:** Guided students in understanding fundamental theorems, proofs, and applications in Calculus and Linear Algebra  
+- **Student Support:** Provided problem-solving strategies and addressed individual questions during office hours and group discussions  
+- **Teaching Approach:** Emphasized conceptual clarity and practical problem sets to strengthen analytical skills
