@@ -1,11 +1,11 @@
 ---
-title: "Teaching Experience 2"
+title: "Mathematics Teaching assitant"
 collection: teaching
 type: "Undergraduate Teaching Assistant"
 permalink: /teaching/math-ta-sessions
-venue: "University Mathematics Department"
+venue: "Ball State University Mathematics Department"
 date: 2022-09-01
-location: "City, Country"
+location: "Muncie, IN"
 ---
 
 As a teaching assistant in the Mathematics Department, I supported undergraduate students through TA sessions and review workshops, with a focus on **Calculus** and **Linear Algebra**.
