@@ -1,5 +1,5 @@
 ---
-title: "Teaching Experience"
+title: "Business Tutor"
 collection: teaching
 type: "Undergraduate Business Tutor"
 permalink: /teaching/undergrad-business-tutor
