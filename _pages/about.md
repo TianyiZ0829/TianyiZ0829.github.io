@@ -20,7 +20,7 @@ Professional Experience
 ======
 In Summer 2024, I was a Treasury Intern at the Federal Home Loan Bank of Atlanta, where I applied quantitative modeling to study prepayment behavior in residential and commercial MBS. I developed and calibrated Yield Book and risk models, integrating macroeconomic indicators and historical cash flows to improve risk forecast accuracy and reduce MBS trading volatility. I also performed interest rate shock simulations to evaluate portfolio resilience and inform risk-mitigation strategies.
 
-Previously, as a Student Researcher at Ed-Choice (2022), I investigated the impact of macroeconomic variables on Hong Kong’s real estate market. I designed a VaR model with Monte Carlo simulations and ARIMA-GARCH approaches, improving risk-assessment accuracy. This work revealed causal links between inflation, wages, exchange rates, and housing prices, offering insights for understanding market dynamics and policy responses.
+Previously, as a Student Researcher at Ed-Choice (2022), I investigated the impact of macroeconomic variables on Hong Kong’s real estate market. This work revealed causal links between inflation, wages, exchange rates, and housing prices, offering insights for understanding market dynamics and policy responses.
 
 ## News
 
