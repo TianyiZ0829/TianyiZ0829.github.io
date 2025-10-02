@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I am Tianyi Zhu, currently a Ph.D. student in Data Analytics and Decision Sciences at the Darden School of Business, University of Virginia, where I am advised by Dr. Max Biggs and Dr.Arthur Delarue. I hold a Master’s degree in Financial Mathematics from the Georgia Institute of Technology and a Bachelor’s degree in Economics and Finance from Ball State University, where I also completed a minor in graduate-level Mathematics.
+Hello, I am Tianyi Zhu, currently a Ph.D. student in Data Analytics and Decision Sciences at the Darden School of Business, University of Virginia, where I am advised by Dr. Max Biggs and Dr. Arthur Delarue. I hold a Master’s degree in Financial Mathematics from the Georgia Institute of Technology and a Bachelor’s degree in Economics and Finance from Ball State University, where I also completed a minor in graduate-level Mathematics.
 
 
 Research Interest
