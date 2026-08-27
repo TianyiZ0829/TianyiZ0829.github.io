@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tianyi Zhu — UVA Darden</title>
+<meta name="description" content="Tianyi Zhu — Ph.D. Student in Data Analytics &amp; Decision Sciences, UVA Darden School of Business.">
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon-180x180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbf8f2;            --bg:oklch(0.981 0.009 85);
+    --ink:#222b44;           --ink:oklch(0.293 0.048 268);
+    --muted:#4d5569;         --muted:oklch(0.45 0.035 268);
+    --accent:#d2712a;        --accent:oklch(0.663 0.179 48);
+    --border:rgba(34,43,68,.12);
+    --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--sans);font-size:16px;line-height:1.5;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  ul{margin:0;padding:0;list-style:none}
+  p{margin:0}
+  h1,h2,h3{margin:0;font-family:var(--serif)}
+
+  .wrap{max-width:1024px;margin:0 auto;padding-left:32px;padding-right:32px}
+
+  /* ---------- nav ---------- */
+  .nav{width:100%;border-bottom:1px solid var(--border);background:var(--bg)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:20px;padding-bottom:20px}
+  .brand{font-family:var(--serif);font-size:18px;font-weight:600;letter-spacing:.45px}
+  .brand span{color:var(--accent)}
+  .nav-links{display:flex;align-items:center;gap:32px}
+  .nav-links a{font-size:13px;letter-spacing:.06em;text-transform:uppercase;transition:color .2s}
+  .nav-links a:hover{color:var(--accent)}
+
+  /* ---------- layout ---------- */
+  main{
+    max-width:1024px;margin:0 auto;padding:64px 32px;
+    display:grid;gap:56px;grid-template-columns:260px 1fr;
+  }
+
+  /* ---------- sidebar ---------- */
+  aside{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
+  .portrait{position:relative;width:240px;height:288px}
+  .portrait::before{
+    content:"";position:absolute;top:-12px;left:-12px;
+    width:100%;height:100%;border:1px solid var(--accent);
+  }
+  .portrait img{position:relative;width:240px;height:288px;object-fit:cover}
+  aside h1{margin-top:32px;font-size:26px;line-height:1.15;font-weight:600}
+  .role{margin-top:8px;font-size:13px;line-height:1.6;color:var(--muted)}
+  .social{margin-top:20px;display:flex;gap:16px}
+  .social a{display:inline-flex;transition:color .2s}
+  .social a:hover{color:var(--accent)}
+  .social svg{width:18px;height:18px}
+  .email{margin-top:20px;font-size:12px;letter-spacing:.025em;color:var(--muted)}
+
+  /* ---------- content ---------- */
+  .content{font-size:15.5px;line-height:1.75}
+  .content p + p{margin-top:16px}
+  .block + .block{margin-top:56px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:20px}
+  .sec-head::before{content:"";display:inline-block;width:32px;height:1px;background:var(--accent);flex:none}
+  .sec-head h2{font-size:28px;line-height:1;font-weight:500}
+  .sub-head{margin-top:40px;margin-bottom:16px;font-size:20px;font-weight:500;font-style:italic}
+  .content a.link{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+
+  .pubs li + li{margin-top:20px}
+  .pub-title{font-family:var(--serif);font-size:17px;font-weight:500;line-height:1.4}
+  .pub-title a{text-underline-offset:4px}
+  .pub-title a:hover{text-decoration:underline}
+  .authors{margin-top:4px;font-size:14px;color:var(--muted)}
+  .authors u{text-decoration:underline}
+  .venue{margin-top:4px;font-size:13px;font-style:italic;color:var(--accent)}
+
+  .exp li{display:flex;justify-content:space-between;gap:24px}
+  .exp li + li{margin-top:12px}
+  .org{font-family:var(--serif);font-weight:500}
+  .exp .meta{color:var(--muted)}
+  .exp .when{font-size:14px;white-space:nowrap;color:var(--muted)}
+  .awards li + li{margin-top:8px}
+
+  footer{padding:40px 0;text-align:center;font-size:12px;letter-spacing:.025em;color:var(--muted)}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:767px){
+    main{grid-template-columns:1fr;gap:40px;padding:40px 24px}
+    .wrap{padding-left:24px;padding-right:24px}
+    aside{align-items:center;text-align:center}
+    .nav .wrap{flex-direction:column;gap:14px}
+    .nav-links{gap:22px}
+    .exp li{flex-direction:column;gap:2px}
+    .content{font-size:15px}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#">Tianyi <span>Zhu</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <aside>
+    <div class="portrait">
+      <img src="images/tianyi.jpg" alt="Portrait of Tianyi Zhu">
+    </div>
+
+    <h1>Tianyi Zhu</h1>
+    <p class="role">Ph.D. Student<br>Data Analytics &amp; Decision Sciences<br>UVA Darden School of Business</p>
+
+    <div class="social">
+      <a href="mailto:ZHUT25@darden.virginia.edu" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://scholar.google.com/citations?user=09uSwoYAAAAJ&amp;hl=en" target="_blank" rel="noreferrer" aria-label="Google Scholar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+      </a>
+    </div>
+
+    <p class="email">ZHUT25 [at] darden.virginia.edu</p>
+  </aside>
+
+  <section class="content">
+
+    <div class="block">
+      <div class="sec-head" id="about"><h2>About</h2></div>
+      <p>I am a second&#8209;year Ph.D. student in Data Analytics and Decision Sciences at the
+        <a class="link" href="https://www.darden.virginia.edu/">University of Virginia Darden School of Business</a>, advised by
+        <a class="link" href="https://maxbiggs91.github.io/mbiggs.github.io/index.html">Dr. Max Biggs</a> and
+        <a class="link" href="https://adelarue.github.io/">Dr. Arthur Delarue</a>.</p>
+      <p>My research interests lie at the intersection of machine learning, optimization, and economics, spanning algorithmic pricing and collusion, interpretability of generative models, and structured reasoning in large language models.</p>
+      <p>Prior to UVA, I received my M.S. in Financial Mathematics from the Georgia Institute of Technology, and a B.S. in Economics, Finance, and Applied Mathematics from Ball State University (summa cum laude). Previously, I worked in Treasury Data Analytics at the Federal Home Loan Bank of Atlanta, and collaborated on a project with Equifax.</p>
+    </div>
+
+    <div class="block">
+      <div class="sec-head" id="research"><h2>Publications</h2></div>
+      <ul class="pubs">
+        <li>
+          <p class="pub-title"><a href="https://arxiv.org/abs/2509.23602" target="_blank" rel="noreferrer">Deep Taxonomic Networks for Unsupervised Hierarchical Prototype Discovery</a></p>
+          <p class="authors">Zekun Wang, Ethan Haarer, <u>Tianyi Zhu</u>, Zhiyi Dai, Christopher J. MacLellan</p>
+          <p class="venue">NeurIPS 2025</p>
+        </li>
+      </ul>
+
+      <h3 class="sub-head">Research in Progress</h3>
+      <ul class="pubs">
+        <li>
+          <p class="pub-title"><a href="https://arxiv.org/abs/2605.07078" target="_blank" rel="noreferrer">Test&#8209;Time Compositional Generalization in Diffusion Models via Concept Discovery</a></p>
+          <p class="authors">Zekun Wang, Anant Gupta, <u>Tianyi Zhu</u>, Christopher J. MacLellan</p>
+        </li>
+        <li>
+          <p class="pub-title">Reference Price Adaptation, Loss Aversion, and the Sustainability of Tacit Collusion</p>
+          <p class="authors"><u>Tianyi Zhu</u></p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="sec-head" id="experience"><h2>Experience</h2></div>
+      <ul class="exp">
+        <li><span><span class="org">Equifax</span><span class="meta">, Project Collaborator</span></span><span class="when">Spring 2025</span></li>
+        <li><span><span class="org">Federal Home Loan Bank of Atlanta</span><span class="meta">, Treasury Data Analytics</span></span><span class="when">Summer 2024</span></li>
+        <li><span><span class="org">Georgia Tech</span><span class="meta">, Teaching Assistant, Linear Algebra</span></span><span class="when">2024 / 2025</span></li>
+      </ul>
+
+      <h3 class="sub-head">Awards</h3>
+      <ul class="awards">
+        <li>Presidential Fellowship, University of Virginia (2025)</li>
+        <li>Ball State Top 50 Students (2023)</li>
+        <li>Teacher Scholar Research Award with Erik Nesson (2022)</li>
+      </ul>
+    </div>
+
+  </section>
+</main>
+
+<footer>&copy; 2026 Tianyi Zhu &middot; Charlottesville, VA</footer>
+
+</body>
+</html>
